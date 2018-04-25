@@ -1,0 +1,26 @@
+Mateusz Szałowski, 298976
+
+SHOOTER
+
+W celu uruchomienia projektu należy go skompilować. Można do tego użyć pliku makefile (w folderze "Game") lub manualnie wpisać polecenie w terminalu:
+
+gcc main3.c player.c enemy.c bullet.c screen_functions.c SDL_initialization_functions.c -w -std=c99 -lSDL2 -lSDL2_image -lSDL2_ttf -lm -o shooter_1.0
+
+Po skompilowaniu programu należy go uruchomić. Jeśli nie wprowadzono zmian w pliku makefile lub komendzie plik wynikowy nazywa się: "shooter_1.0"
+
+Po uruchomieniu należy kliknąć lewym przyciskiem myszy na "New Game", aby rozpocząć grę lub "Quit" aby wyjść.
+
+Graczem sterujemy za pomocą przycisków A W S D na klawiaturze oraz myszki - postać obraca się w jej kierunku. Klikając lewy przycisk myszy, możemy oddać strzał, który zostanie skierowany w kierunku kursora. Pocisk po przyjęciu tej ścieżki będzie podążał nią dopóki nie napotka krawędzi ekranu gry lub jakiegoś wroga.
+
+Celem gry jest zdobycie jak największej ilości punktów poprzez strzelanie do samo generujących się wrogów.
+Nad każdym avatarem wroga (odpowiednio gracza), wyświetlają się zielone prostokąty, symbolizujące punky hp wroga (odpowiednio gracza).
+Gracz rozpoczyna grę z pięcioma punktami życia a wrogowie mają ich na początku 3. Za każdy celny strzał we wroga, graczowi naliczane są punkty. Zatem na jednym wrogim avatarze można uzyskać 3 punkty.
+Rozgrywka toczy się dopóki, dopóty gracz ma jakieś punkty hp.
+
+W każdej chwili możemy zatrzymać rozgrywkę naciskając na klawiaturze przycisk "P" (Pause). Wtedy gra zostanie "zamrożona" i na ekranie wyświetli się napis "Game paused".
+
+W miarę upływu czasu, częstotliwość pojawiania się wrogów zwiększa się i gra staje się trudniejsza.
+
+Po zakończeniu rozgrywki wyświetli się ekran z napisem "Game Over" oraz ilością uzyskanych punktów w grze. 
+
+Aby wyjść z gry należy nacisnąć [X] w prawym górnym rogu okna.
